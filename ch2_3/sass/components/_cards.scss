@@ -1,0 +1,44 @@
+.card {
+  border-radius: 20px;
+ 
+  h3 {
+    background-color: #9999FF;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    margin: 0;
+    @include dark-box-shadow;
+    @include title-radius;
+  }
+  &_content {
+    margin: 0;
+    padding: 15px;
+    @include content-radius;
+    @media (max-width: 780px) {
+      @include dark-box-shadow;
+    }
+  }
+}
+
+.main_card {
+
+}
+
+.small_card {
+  //constraint width for all cards to be equal
+  width: 100%;
+}
+
+.small_card_right > h3 {
+  @media (min-width: 780px) {
+    @include title-radius-right;
+  }
+}
+
+.small_card_left > h3 {
+  @media (min-width: 780px) {
+    @include title-radius-left;
+  }
+}

@@ -1,0 +1,38 @@
+footer {
+  //set column between h3 and content
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  background-color: #D3D3D3;
+  @include footer-box-shadow;
+  @media (max-width: 780px) {
+    padding: 15px;
+  }
+  .footer_container {
+    max-width: 980px;
+    display: flex;
+    flex-flow: column nowrap;
+    h3 {
+      width: 100%;
+    }
+    //set in row for desktop
+    .contact_content_container {
+      width: 100%;
+      display: flex;
+      flex-flow: row nowrap;
+      gap: 20px;
+      //and in column for small screen
+      @media (max-width: 920px) {
+        flex-flow: column nowrap;
+        gap: 0;
+      }
+      //set in row between icon and text
+      .contact_content {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        gap: 15px;
+      }
+    }
+  }
+}

@@ -1,0 +1,47 @@
+@mixin light-box-shadow {
+  -webkit-box-shadow: 0px 7px 27px 11px rgba(255,255,255,0.05); 
+  box-shadow: 0px 7px 27px 11px rgba(255,255,255,0.05);
+}
+
+@mixin dark-box-shadow {
+  -webkit-box-shadow: 0px 7px 27px 11px rgba(0,0,0,0.05); 
+  box-shadow: 0px 7px 27px 11px rgba(0,0,0,0.1);
+}
+
+@mixin header-box-shadow {
+ -webkit-box-shadow: 0px 10px 35px 3px rgba(0,0,0,0.4); 
+  box-shadow: 0px 10px 35px 3px rgba(0,0,0,0.4);
+}
+
+@mixin footer-box-shadow {
+  -webkit-box-shadow: 0px -10px 35px 3px rgba(211,211,211,0.4); 
+  box-shadow: 0px -10px 35px 3px rgba(211,211,211,0.4);
+}
+
+@mixin title-radius {
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+@mixin title-radius-right {
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 20px;
+}
+
+@mixin title-radius-left {
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 5px;
+}
+
+@mixin content-radius {
+  //border-top-right-radius: 20px;
+  //border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}

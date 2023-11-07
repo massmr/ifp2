@@ -1,0 +1,78 @@
+header {
+  width: auto;
+  height: auto;
+  //background-color: #E0E0E0;
+  background-image: url('../images/blockchain.jpg');
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  @include header-box-shadow;
+  @media (max-width: 780px) {
+    padding: 50px 30px;
+  }
+  .container {
+    width: 100%;
+    max-width: 980px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+  }
+  img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover; 
+    @include light-box-shadow;
+  }
+  h1 {
+      color: white;
+  }
+  div {
+    display: flex;
+    flex-flow: row nowrap;
+    min-width: 600px;
+    border-radius: 25px;
+    @include light-box-shadow;
+    @media (max-width: 780px) {
+      flex-flow: column nowrap;
+      align-items: center;
+      width: 100%;
+      min-width: 0;
+    }
+    h2 {
+      margin: 0;
+      padding: 15px 15px;
+      display: flex;
+      justify-content: center;
+      @media (max-width: 780px) {
+        padding: 15px 0px;
+      }
+    }
+    #radio {
+      color: white;
+      background-color: #9999FF;
+      border-top-left-radius: 25px;
+      border-bottom-left-radius: 25px;
+      width: 50%;
+      @media (max-width: 780px) {
+        border-top-right-radius: 25px;
+        border-top-left-radius: 25px;
+        border-bottom-left-radius: 0;
+        width: 100%;
+      }
+    }
+    #etudiant {
+      color: #9999FF;
+      background-color: white;
+      border-top-right-radius: 25px;
+      border-bottom-right-radius: 25px;
+      width: 50%;
+      @media (max-width: 780px) {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 25px;
+        border-bottom-left-radius: 25px;
+        width: 100%;
+      }
+    }
+  }
+}

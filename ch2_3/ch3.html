@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="author" content="Massimo Marcellin"/>
+    <meta name="description" content="Ceci est le rendu de l'exercice 2.1 du cours d'UOR et représente mon curriculum vitae."/>
+    <meta name="keywords" content="Curriculum Vitae, CV, HTML, UOR, exercice 2.1" />
+    <meta name="robots" content="index, follow" />
+    <meta name="og:title" content="Curriculum Vitae de Massimo Marcellin" />
+    <meta name="og:description" content="Ceci est le rendu de l'exercice 2.1 du cours d'UOR. Mon CV en HTML y est représenté." />
+    <meta name="og:type" content="website" />
+    <meta name="og:url" content="https://massmr.xyz/projects/UOR/cv1" />
+    <title>Curriculum Vitae</title>
+    <link rel="stylesheet" href="./sass/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/560939e597.js" crossorigin="anonymous"></script>
+  </head>
+  <!-- HTML head tag optimized for SEO : https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML-->
+
+  <body>
+    <!--The header contains : an image of me and the titles-->
+    <!--The background image is from :-->
+    <!--https://www.freepik.com/free-vector/abstract-violet-particle-wave-points-array-shallow-depth-field-futuristic-illustration-technology-digital-splash-explosion-data-points_20865551.htm#query=abstract%20purple%20ai&position=31&from_view=search&track=ais Image by GarryKillian on Freepik-->
+    <header>
+      <section class=container>
+        <img src="./images/portrait.jpg" alt="Massimo Marcellin">
+        <h1>Massimo MARCELLIN</h1>
+        <div>
+          <h2 id="radio">Opérateur Radio</h2>
+          <h2 id="etudiant">Etudiant Informatique</h2>
+        </div>
+      </section>
+    </header>
+    <!--The main contains : 2 columns (for desktop display and further css styles) 
+    of cards, each card is a category. The columns will be displayed as 1 unique 
+    column if HTML only-->
+    <main>
+      <section class="container">
+        <!--Personal card-->
+        <article class="main_card card">
+        <h3>Résumé personnel</h3>
+        <p class="card_content">Militaire depuis 8 ans en qualité de "radio", je suis devenu
+        expert des systèmes de télécommunication militaires. Des plus bas
+        échelons, en étant déployé en mission sur le terrain. Jusqu'aux plus
+        hauts, en participant à la mise en service de postes de
+        commandement. Grâce à mon travail dans les télécommunications j'ai
+        développé un fort attrait pour l'informatique que j'étudie désormais à
+        l'université Paris 8.</p>
+        </article>
+        <!--column-->
+        <section class="column_container">
+          <!--left column-->
+          <section class="column_one">
+            <!--Education card-->
+            <article class="card small_card small_card_left" id="education">
+              <h3>Éducation</h3>
+              <div class="card_content">
+                <div class="school_card">
+                  <h4>Université Paris 8</h4>
+                  <!--span iot higlight these words-->
+                  <p><span>L1 : Informatique</span><br>2023 - aujourd'hui / Institut d'enseignement
+                  à distance</p>
+                </div>
+                <div class="school_card">
+                  <h4>Université d'Aix-Marseille</h4>
+                  <p><span>L1 - L2 : Sciences pour l'ingénieur</span><br>2014 - 2016 /
+                  Aix-Marseille</p>
+                </div>
+                <div class="school_card">
+                  <h4>Lycée Pasquet</h4>
+                  <p><span>Baccalauréat Scientifique - mention Sciences pour l'ingénieur</span>
+                  <br>2011 - 2014 / Arles</p>
+                </div>
+              </div>
+            </article>
+            <!--Experience card-->
+            <article class="card small_card small_card_left" id="experience_pro">
+              <h3>Expérience professionnelle</h3>
+              <div class="card_content">
+                <div class=work_card>
+                  <h4>Opérateur radio</h4>
+                  <p>Forces spéciales terre<br>Administration et mise en oeuvre des
+                  moyens de communication dédiés aux opérations spéciales. <br>
+                  2021 - aujourd'hui / Pau</p>
+                </div>
+                <div class=work_card>
+                  <h4>Opérateur radio</h4>
+                  <p>17° Régiment du Génie Parachutiste<br>Mise en oeuvre des moyens
+                  de communication, principalement par VHF, entre les différents échelons 
+                  opérationnels.<br>2016 - 2021 / Montauban</p>
+                </div>
+              </div>
+            </article>
+          <!--End of first column-->
+          </section>
+          <!--Second column-->
+          <section class="column_two">
+            <!--Tech stack CS card-->
+            <article class="card small_card small_card_right">
+              <h3>Tech stack CS</h3>
+              <div class="card_content">
+                <ul>
+                  <li>HTML</li>
+                  <li>CSS / SASS</li>
+                  <li>Javascript / Nodejs - Express.js</li>
+                  <li>MongoDB</li>
+                </ul>
+              </div>
+            </article>
+            <!--Tech stack Radio card-->
+            <article class="card small_card small_card_right">
+              <h3>Tech stack Radio</h3>
+              <div class="card_content">
+                <ul>
+                  <li>4G LTE</li>
+                  <li>Communications satellitaires</li>
+                  <li>Systèmes HF / VHF / VUHF</li>
+                  <li>Code morse</li>
+                </ul>
+              </div>
+            </article>
+            <!--Soft-skills card-->
+            <article class="card small_card small_card_right">
+              <h3>Soft-skills</h3>
+              <div class="card_content">
+                <ul>
+                  <li>Travail en situation de stress</li>
+                  <li>Esprit d'équipe</li>
+                  <li>Management de projet</li>
+                  <li>Anglais niveau B2</li>
+                </ul>
+              </div>
+            </article>
+          <!--End of second column--> 
+          </section>
+        <!--End of main column-->
+        </section>
+      <!--End of container--> 
+      </section>
+   </main>
+   <footer>
+     <div class="footer_container">
+      <h3>Contact</h3>
+      <div class="contact_content_container">
+        <div class="contact_content"><i class="fa-solid fa-location-dot"></i><p>14 rue Dominique
+         Maïsto 13200 Arles</p></div>
+        <div class="contact_content"><i class="fa-solid fa-phone"></i><p>06 61 64 52 39</p></div>
+        <div class="contact_content"><i class="fa-solid
+           fa-envelope"></i><p>marcellin.massimo@gmail.com</p></div>
+        <div class="contact_content"><i class="fa-brands fa-github"></i><p>massmr</p></div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

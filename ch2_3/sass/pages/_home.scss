@@ -1,0 +1,42 @@
+main {
+  padding: 50px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  @media (max-width: 780px) {
+    padding: 50px 30px;
+  }
+  .container {
+    max-width: 980px;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 30px;
+    .column_container {
+      display: flex;
+      flex-flow: row nowrap;
+      gap: 30px;
+      @media (max-width: 780px) {
+        flex-flow: column nowrap;
+      }
+      .column_one {
+        width: 50%;
+        display: flex;
+        flex-flow: column nowrap;
+        @media (max-width: 780px) {
+          width: 100%;
+          gap: 30px;
+        }
+      }
+      .column_two {
+        width: 50%;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+        @media (max-width: 780px) {
+          width: 100%;
+          gap: 30px;
+        }
+      }
+    }
+  }
+}
